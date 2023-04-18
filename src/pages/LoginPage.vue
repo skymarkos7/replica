@@ -13,8 +13,13 @@
       <div class="row">
         <q-card class="q-pa-lg shadow-1">
           <q-card-section class="text-center q-pa-none">
-            <h4 style="margin:auto" class="text-left text-bold">Entre na sua conta</h4>
-            <h6 style="margin:auto; margin-bottom: 20px;" class="text-left text-grey-8">
+            <h4 style="margin: auto" class="text-left text-bold">
+              Entre na sua conta
+            </h4>
+            <h6
+              style="margin: auto; margin-bottom: 20px"
+              class="text-left text-grey-8"
+            >
               Para acessar sua conta informe seu e-mail e senha
             </h6>
           </q-card-section>
@@ -23,8 +28,8 @@
               <label class="left"
                 >E-mail
                 <q-input
-                class="in"
-                  style="margin-bottom: 20px; "
+                  class="in"
+                  style="margin-bottom: 20px"
                   outlined
                   v-model="ph"
                   placeholder="Seu e-mail"
@@ -36,7 +41,7 @@
               <label for=""
                 >Senha
                 <q-input
-                class="in"
+                  class="in"
                   outlined
                   v-model="ph"
                   placeholder="Sua senha"
@@ -45,7 +50,8 @@
               </label>
             </q-form>
             <q-card-section class="text-center q-pa-none">
-              <a style="text-decoration: none; font-size: 1rem;" href="#"  ><p  class="text-right text-9 text-grey-8">
+              <a style="text-decoration: none; font-size: 1rem" href="#"
+                ><p class="text-right text-9 text-grey-8">
                   Esqueci minha senha
                 </p></a
               >
@@ -59,6 +65,7 @@
               size="lg"
               class="full-width text-white in"
               label="FAZER LOGIN"
+              to="/"
             />
           </q-card-actions>
         </q-card>
@@ -88,7 +95,7 @@ export default {
   width: 617px;
   border-radius: 5px;
 }
-.in{
+.in {
   height: 80px;
 }
 </style>
