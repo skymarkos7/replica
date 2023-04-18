@@ -71,7 +71,7 @@
         </q-card>
       </div>
       <p style="margin: 30px; font-size: 1.3rem" class="text-grey-9 text-x10">
-        Ainda não tem conta? <a style="color: #f30168" href="">Cadastre-se</a>
+        Ainda não tem conta? <a style="color: #f30168" href="#/plans">Cadastre-se</a>
       </p>
     </div>
   </q-page>
