@@ -51,3 +51,7 @@ See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quas
   - Comentários (Português)
   - Código (Inglês)
   - Nome de arquivos (Inglês)
+
+- Versionamento
+  - commits realizados em branch separada (develop)
+  - merge para master após versão funcional
