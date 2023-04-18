@@ -2,7 +2,7 @@
   <q-page style="background-color: #fafafc" class="flex flex-center">
     <div
       class="justify-between row"
-      style="width: 100%; max-width: 1700px position: fixed;"
+      style="width: 100%; max-width: 1300px "
       elevated
     >
       <q-toolbar-title>
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div>
+    <div flex flex-center>
       <h4 style="margin: auto; margin-bottom: 8px" class="text-left text-bold">
         Olá João,
       </h4>
