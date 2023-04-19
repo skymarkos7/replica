@@ -34,20 +34,17 @@
       </div>
     </div>
 
-    <div>
-      <h4
-        style="margin: 0 auto; margin-bottom: 8px"
-        class="text-left text-bold"
-      >
-        Olá João,
-      </h4>
-      <h6
-        style="margin: auto; margin-bottom: 25px; font-size: 1.1rem"
-        class="text-left text-grey-8"
-      >
-        Seja bem vindo a sua conta de hospedagem
-      </h6>
-      <div class="flex flex-center">
+    <div style="max-width: 900px" class="flex">
+      <q-card-section class="justify-start column">
+        <h4 style="margin-bottom: 8px" class="text-bold">Olá João,</h4>
+        <h6
+          style="margin-bottom: 25px; margin-top: 8px; font-size: 1.1rem"
+          class="text-left text-grey-8"
+        >
+          Seja bem vindo a sua conta de hospedagem
+        </h6>
+      </q-card-section>
+      <q-card-section class="flex flex-center justify-center">
         <iframe
           width="976"
           height="654"
@@ -57,19 +54,11 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-      </div>
-      <p
-        style="
-          margin: auto;
-          margin-bottom: 20px;
-          font-size: 1rem;
-          margin-top: 20px;
-        "
-        class="text-left"
-      >
-        Caso tenha alguma dúvida,
-        <a style="color: black" href=""> visite nossa central de ajuda.</a>
-      </p>
+      </q-card-section>
+        <p style="font-size: 1rem; margin-top: 20px" class="text-left">
+          Caso tenha alguma dúvida,
+          <a style="color: black" href=""> visite nossa central de ajuda.</a>
+        </p>
     </div>
   </q-page>
 </template>
@@ -86,12 +75,15 @@ export default defineComponent({
   },
   methods: {
     logout() {
-      if (this.sair==true) {
+      if (this.sair == true) {
         this.sair = false;
-      }else{
+      } else {
         this.sair = true;
       }
 
+      /**
+       * destruir sessão
+       */
     },
   },
 });

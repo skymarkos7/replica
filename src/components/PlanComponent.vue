@@ -1,24 +1,24 @@
 <template>
   <q-card style="margin: 15px" flat bordered class="my-card flex flex-center">
     <q-card-section>
-      <div class="text-h4 text-bold text-grey-8">Hospedagem 1</div>
+      <div class="text-h4 text-bold text-grey-8">Hospedagem {{ plano }}</div>
     </q-card-section>
     <q-card-section>
       <div style="color: #f30168" class="text-h3 text-bold flex flex-center">
-        Grátis
+        {{ valor }}
       </div>
     </q-card-section>
 
     <q-card-section class="q-pt-none column flex-center">
-      <p class="space color">você não paga nada para usar</p>
-      <p class="space color">sem taxa de setup</p>
+      <p class="space color">{{ terH }}</p>
+      <p class="space color">{{ qua }}</p>
     </q-card-section>
 
     <q-separator style="width: 250px" inset />
 
     <q-card-section class="column flex-center">
-      <p class="text-subtitle1 space ide">Ideal para quem está</p>
-      <p class="text-subtitle1 space ide">começando.</p>
+      <p class="text-subtitle1 space ide">{{ qui }}</p>
+      <p class="text-subtitle1 space ide">{{ sex }}</p>
     </q-card-section>
 
     <q-separator style="width: 250px" inset />
@@ -133,14 +133,20 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "PlanComponent",
   props: {
-    title: {
+    valor: String,
+    plano: String,
+    terH: String,
+    qua: String,
+    qui: String,
+    sex: String,
+    set: String,
+    oit: String,
+    non: String,
+    dec: String,
+
+    hospe: {
       type: String,
       required: true,
-    },
-
-    caption: {
-      type: String,
-      default: "",
     },
   },
 });
@@ -182,12 +188,12 @@ export default defineComponent({
 .section {
   padding: 8px;
 }
-.ide{
+.ide {
   line-height: 1;
   color: #666666;
 }
 
-.color{
+.color {
   color: #666666;
 }
 </style>
