@@ -17,6 +17,8 @@
         :qtdFTP="ftpH1"
         :qtdEmail="emailH1"
         :mgtop="mgtop"
+        :urlPlano="plano1"
+        :btnplano="btnplano"
       />
 
       <PlanComponent
@@ -34,6 +36,8 @@
         :migraSimbol="migracaoSimbol2"
         :migraText="migracaoText2"
         :migra="migrac"
+        :urlPlano="plano2"
+        :btnplano="btnplano"
       />
 
       <PlanComponent
@@ -51,7 +55,8 @@
         :migraSimbol="migracaoSimbol2"
         :migraText="migracaoText2"
         :migra="migrac"
-
+        :urlPlano="plano3"
+        :btnplano="btnplano"
       />
     </div>
   </q-page>
@@ -108,9 +113,17 @@ export default defineComponent({
       migracaoText2: 'Migramos todos seus sites para nossos servidores;',
 
       migrac: true,
-      
+
+      plano1: 'register/1',
+      plano2: 'register/2',
+      plano3: 'register/3',
+
+      btnplano: 'ESCOLHER ESSE PLANO'
+
     };
   },
+
+
 });
 </script>
 

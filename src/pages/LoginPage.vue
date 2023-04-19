@@ -63,7 +63,7 @@
               size="lg"
               class="full-width text-white in"
               label="FAZER LOGIN"
-              to="/"
+              to="index"
             />
           </q-card-actions>
         </q-card>

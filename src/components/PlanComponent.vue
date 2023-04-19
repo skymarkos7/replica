@@ -1,5 +1,5 @@
 <template >
-  <q-card :style=mgtop flat bordered class="my-card flex ">
+  <q-card :style=mgtop flat bordered class="my-card flex flex-center">
     <q-card-section>
       <div class="text-h4 text-bold text-grey-8">Hospedagem {{ plano }}</div>
     </q-card-section>
@@ -29,8 +29,9 @@
         style="background-color: #f30168; margin-top: 15px"
         size="lg"
         class="full-width text-white text-subtitle1 in"
-        label="ESCOLHER ESSE PLANO"
-        to="register"
+        :label=btnplano
+        :to=urlPlano
+
       />
     </q-card-actions>
 
@@ -165,6 +166,8 @@ export default defineComponent({
     migraText: String,
 
     migra: Boolean,
+    urlPlano: String,
+    btnplano: String,
 
     hospe: {
       type: String,
