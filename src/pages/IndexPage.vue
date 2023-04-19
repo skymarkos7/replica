@@ -2,7 +2,7 @@
   <q-page style="background-color: #fafafc" class="flex flex-center">
     <div
       class="justify-between row"
-      style="width: 100%; max-width: 1200px "
+      style="width: 100%; max-width: 1200px"
       elevated
     >
       <q-toolbar-title>
