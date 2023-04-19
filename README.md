@@ -1,6 +1,8 @@
-# Quasar App (replica)
+# Quasar App (replica cadastro)
 
-A Quasar Project
+## [Disclaimer](disclaimer.md)
+
+<hr>
 
 ## Install the dependencies
 
@@ -14,6 +16,8 @@ npm install
 
 ```bash
 quasar dev
+# or
+npx quasar dev
 ```
 
 ### Lint the files
@@ -36,6 +40,8 @@ npm run format
 
 ```bash
 quasar build
+# or
+npx quasar dev
 ```
 
 ### Customize the configuration
@@ -47,6 +53,7 @@ See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quas
 # características
 
 - Idioma
+
   - Comits (Português)
   - Comentários (Português)
   - Código (Inglês)
