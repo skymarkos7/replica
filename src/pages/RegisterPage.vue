@@ -130,7 +130,7 @@
         :qtdFTP="ftpH1"
         :qtdEmail="emailH1"
         :mgtop="mgtop"
-        :urlPlano="plano1"
+        :urlPlano="planourl"
         :btnplano="btnplano"
       />
 
@@ -150,7 +150,7 @@
         :migraSimbol="migracaoSimbol2"
         :migraText="migracaoText2"
         :migra="migrac"
-        :urlPlano="plano2"
+        :urlPlano="planourl"
         :btnplano="btnplano"
       />
 
@@ -170,7 +170,7 @@
         :migraSimbol="migracaoSimbol2"
         :migraText="migracaoText2"
         :migra="migrac"
-        :urlPlano="plano3"
+        :urlPlano="planourl"
         :btnplano="btnplano"
       />
     </q-card-section>
@@ -231,9 +231,7 @@ export default defineComponent({
 
       migrac: true,
 
-      plano1: "register/1",
-      plano2: "register/2",
-      plano3: "register/3",
+      planourl: "../plans",
 
       planoh: "",
       btnplano: "TROCAR PLANO",
