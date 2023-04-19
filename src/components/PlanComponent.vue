@@ -1,63 +1,128 @@
 <template>
-  <q-card style="margin:15px ;" flat bordered class="my-card flex flex-center">
+  <q-card style="margin: 15px" flat bordered class="my-card flex flex-center">
     <q-card-section>
-      <div class="text-h4 text-bold">Hospedagem 1</div>
-      <div style="color: #f30168" class="text-h3 text-bold">Grátis</div>
+      <div class="text-h4 text-bold text-grey-8">Hospedagem 1</div>
+    </q-card-section>
+    <q-card-section>
+      <div style="color: #f30168" class="text-h3 text-bold flex flex-center">
+        Grátis
+      </div>
     </q-card-section>
 
-    <q-card-section class="q-pt-none">
-      você não paga nada para usar sem taxa de setup
+    <q-card-section class="q-pt-none column flex-center">
+      <p class="space">você não paga nada para usar</p>
+      <p class="space">sem taxa de setup</p>
     </q-card-section>
 
-    <q-card-section>
-    <q-separator style="width: 300px;" inset />
-  </q-card-section>
+    <q-separator style="width: 250px" inset />
 
+    <q-card-section class="column flex-center">
+      <p class="text-subtitle1 space">Ideal para quem está</p>
+      <p class="text-subtitle1 space">começando.</p>
+    </q-card-section>
 
-    <q-card-section> Ideal para quem está começando. </q-card-section>
-
-    <q-separator inset />
+    <q-separator style="width: 250px" inset />
 
     <q-card-actions class="q-px-md">
       <q-btn
         unelevated
-        style="background-color: #f30168"
+        style="background-color: #f30168; margin-top: 15px"
         size="lg"
-        class="full-width text-white in"
+        class="full-width text-white text-subtitle1 in"
         label="ESCOLHER ESSE PLANO"
         to="/"
       />
     </q-card-actions>
 
     <q-card-section>
-      <p class="text-h6">Seu site em servidores no Estados Unidos.</p>
-      <p>
-        ✓ ASP. ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP
-        5.3, 5.4, 5.5, 5.6 e 7.0;
-      </p>
-      <p>✓ 1 usuário de FTP para upload ou download;</p>
-      <p>✓ 1 contas de e-mails profissionais;</p>
-      <p>✓ 1 contas de e-mails profissionais;</p>
-      <p>✓ 1 subdomínio gratuito;</p>
-      <p class="text-h6">Suporte 24 horas, 7 dias por semana grátis;</p>
-      <p class="text-h6">Aplicativos disponíveis;</p>
-
-      <p>
-        ✓ ASP. ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou PHP
-        5.3, 5.4, 5.5, 5.6 e 7.0;
-      </p>
-      <p>✓ Wordpress;</p>
-      <p>✓ Drupal;</p>
-      <p>✓ Entre outros...</p>
-      <p class="text-h6">Você ainda tem</p>
-      <p>✓ Webmail RoundCube;</p>
-      <p>✓ AntiSpam;</p>
-      <p>✓ Painel de gerenciamento de DNS;</p>
-      <p>✓ Painel de controle web;</p>
-      <p>✓ Configurações de PHP personalizáveis;</p>
-      <p>✓ Certificado SSL Grátis;</p>
-      <p>✓ Transferência ilimitada.</p>
-      <p>✓ Drupal;</p>
+      <q-card-section class="section">
+        <p class="vtg-title">Seu site em servidores <u>no</u></p>
+        <p class="vtg-title"><u>Estados Unidos.</u></p>
+      </q-card-section>
+      <q-card-section class="section">
+        <div class="row text-subtitle1 vtg-ctn">
+          <p>✓</p>
+          <p class="vtg">Servidores em nossos data center americanos;</p>
+        </div>
+        <div class="row text-subtitle1 vtg-ctn">
+          <p>✓</p>
+          <p class="vtg">
+            ASP. ASP.NET 2.0/3.0/3.5/ e 4.0/4.5/4.5.1/4.5.2 (medium trust) ou
+            PHP 5.3, 5.4, 5.5, 5.6 e 7.0;
+          </p>
+        </div>
+        <div class="row vtg-ctn">
+          <p>✓</p>
+          <p class="vtg">1 usuário de FTP para upload ou download;</p>
+        </div>
+        <div class="row vtg-ctn">
+          <p>✓</p>
+          <p class="vtg vtg-ctn">1 contas de e-mails profissionais;</p>
+        </div>
+        <div class="row vtg-ctn">
+          <p>✓</p>
+          <p class="vtg vtg-ctn">1 contas de e-mails profissionais;</p>
+        </div>
+        <div class="row vtg-ctn">
+          <p>✓</p>
+          <p class="vtg">1 subdomínio gratuito;</p>
+        </div>
+      </q-card-section>
+      <q-card-section class="section">
+        <p class="vtg-title">Suporte 24 horas, 7 dias por semana grátis;</p>
+      </q-card-section>
+      <q-card-section class="section">
+        <p class="vtg-title">Aplicativos disponíveis;</p>
+      </q-card-section>
+      <q-card-section class="section">
+        <div class="row vtg-ctn">
+          <p>✓</p>
+          <p class="vtg">Wordpress;</p>
+        </div>
+        <div class="row vtg-ctn">
+          <p>✓</p>
+          <p class="vtg">Drupal;</p>
+        </div>
+        <div class="row vtg-ctn">
+          <p>✓</p>
+          <p class="vtg">Entre outros...</p>
+        </div>
+      </q-card-section>
+      <q-card-section class="section">
+        <p class="vtg-title">Você ainda tem</p>
+      </q-card-section>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">Webmail RoundCube;</p>
+      </div>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">AntiSpam;</p>
+      </div>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">Painel de gerenciamento de DNS;</p>
+      </div>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">Painel de controle web;</p>
+      </div>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">Configurações de PHP personalizáveis;</p>
+      </div>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">Certificado SSL Grátis;</p>
+      </div>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">Transferência ilimitada.</p>
+      </div>
+      <div class="row vtg-ctn">
+        <p>✓</p>
+        <p class="vtg">Drupal;</p>
+      </div>
     </q-card-section>
   </q-card>
 </template>
@@ -88,5 +153,33 @@ export default defineComponent({
   height: 1262px;
   width: 348px;
   border-radius: 5px;
+}
+
+.space {
+  margin: 0 auto;
+}
+
+.in {
+  padding: 15px;
+}
+.vtg {
+  width: 262px;
+  margin-left: 5px;
+  line-height: 1;
+  color: #666666;
+}
+.vtg-ctn {
+  line-height: 1;
+}
+
+.vtg-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666666;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+.section {
+  padding: 8px;
 }
 </style>
