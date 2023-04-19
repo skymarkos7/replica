@@ -1,6 +1,5 @@
 <template>
   <q-page
-    style="background-color: #fafafc"
     class="window-height window-width row justify-center items-center"
   >
     <div class="column justify-center items-center">
@@ -23,13 +22,12 @@
               Para acessar sua conta informe seu e-mail e senha
             </h6>
           </q-card-section>
-          <q-card-section>
+          <q-card-section style="max-width: 492px ;">
             <q-form class="q-gutter-md">
-              <label class="left"
+              <label
                 >E-mail
                 <q-input
-                  class="in"
-                  style="margin-bottom: 20px"
+                  style="margin-bottom: 20px; "
                   outlined
                   v-model="ph"
                   placeholder="Seu e-mail"
@@ -90,11 +88,7 @@ export default {
 </script>
 
 <style>
-.q-card {
-  height: 492px;
-  width: 617px;
-  border-radius: 5px;
-}
+
 .in {
   height: 80px;
 }

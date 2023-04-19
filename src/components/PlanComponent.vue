@@ -30,7 +30,7 @@
         size="lg"
         class="full-width text-white text-subtitle1 in"
         label="ESCOLHER ESSE PLANO"
-        to="/"
+        to="register"
       />
     </q-card-actions>
 

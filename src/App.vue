@@ -9,3 +9,16 @@ export default defineComponent({
   name: 'App'
 })
 </script>
+
+
+
+
+<style>
+/**
+ * Aplicando background em todas as pages
+ */
+body{
+  background-color: #fafafc;
+}
+
+</style>
