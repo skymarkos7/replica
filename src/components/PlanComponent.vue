@@ -10,15 +10,15 @@
     </q-card-section>
 
     <q-card-section class="q-pt-none column flex-center">
-      <p class="space">você não paga nada para usar</p>
-      <p class="space">sem taxa de setup</p>
+      <p class="space color">você não paga nada para usar</p>
+      <p class="space color">sem taxa de setup</p>
     </q-card-section>
 
     <q-separator style="width: 250px" inset />
 
     <q-card-section class="column flex-center">
-      <p class="text-subtitle1 space">Ideal para quem está</p>
-      <p class="text-subtitle1 space">começando.</p>
+      <p class="text-subtitle1 space ide">Ideal para quem está</p>
+      <p class="text-subtitle1 space ide">começando.</p>
     </q-card-section>
 
     <q-separator style="width: 250px" inset />
@@ -181,5 +181,13 @@ export default defineComponent({
 }
 .section {
   padding: 8px;
+}
+.ide{
+  line-height: 1;
+  color: #666666;
+}
+
+.color{
+  color: #666666;
 }
 </style>
