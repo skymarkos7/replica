@@ -16,6 +16,7 @@
         :dataCenter="dataCenterUsa"
         :qtdFTP="ftpH1"
         :qtdEmail="emailH1"
+        :mgtop="mgtop"
       />
 
       <PlanComponent
@@ -76,6 +77,7 @@ export default defineComponent({
       h1Plano: "1",
       h2Plano: "2",
       h3Plano: "3",
+      // mgtop: "margin-top:-80px",
 
       terHG: "você não paga nada para usar",
       terHP: "cobrado mensalmente",

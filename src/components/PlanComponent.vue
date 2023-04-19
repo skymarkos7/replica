@@ -1,5 +1,5 @@
-<template>
-  <q-card style="margin: 15px" flat bordered class="my-card flex flex-center">
+<template >
+  <q-card :style=mgtop flat bordered class="my-card flex ">
     <q-card-section>
       <div class="text-h4 text-bold text-grey-8">Hospedagem {{ plano }}</div>
     </q-card-section>
@@ -92,16 +92,16 @@
       </q-card-section>
 
       <div v-if="migra">
-      <q-card-section class="section">
-        <p class="vtg-title">{{migraTitle}}</p>
-      </q-card-section>
-      <q-card-section class="section">
-        <div class="row vtg-ctn">
-          <p>{{migraSimbol}}</p>
-          <p class="vtg">{{migraText}}</p>
-        </div>
-      </q-card-section>
-    </div>
+        <q-card-section class="section">
+          <p class="vtg-title">{{ migraTitle }}</p>
+        </q-card-section>
+        <q-card-section class="section">
+          <div class="row vtg-ctn">
+            <p>{{ migraSimbol }}</p>
+            <p class="vtg">{{ migraText }}</p>
+          </div>
+        </q-card-section>
+      </div>
 
       <q-card-section class="section">
         <p class="vtg-title">Você ainda tem</p>
@@ -154,6 +154,7 @@ export default defineComponent({
     qua: String,
     qui: String,
     sex: String,
+    mgtop: String,
 
     pais: String,
     dataCenter: String,
@@ -164,7 +165,6 @@ export default defineComponent({
     migraText: String,
 
     migra: Boolean,
-
 
     hospe: {
       type: String,
@@ -181,6 +181,8 @@ export default defineComponent({
   /* height: 1262px; */
   width: 348px;
   border-radius: 5px;
+  position:static;
+  margin: 15px;
 }
 
 .space {

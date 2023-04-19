@@ -2,13 +2,13 @@
   <q-page class="flex flex-center column">
     <TitlePlanComponent />
 
-    <q-card-section style="max-width: 1600px" class="row">
-      <q-card-section class="col">
-        <q-form class="q-gutter-md">
+    <q-card-section style="" class="row">      
+      <q-card style="padding: 30px; max-width: 617px" >
+        <q-form class="q-gutter-md ">
           <label
             ><p>Nome completo</p>
             <q-input
-              style="margin-bottom: 20px"
+              style=""
               outlined
               v-model="ph"
               placeholder="Informe seu nome completo"
@@ -94,8 +94,18 @@
               de orivacidade.
             </p>
           </q-card-section>
+        <q-card-section>
+          <q-btn
+            unelevated
+            style="background-color: #f30168;"
+            size="lg"
+            class="full-width text-white text-subtitle1 in"
+            label="CRIAR CONTA"
+            href="#"
+          />
+        </q-card-section>
         </q-form>
-      </q-card-section>
+      </q-card>
       <PlanComponent />
     </q-card-section>
   </q-page>
