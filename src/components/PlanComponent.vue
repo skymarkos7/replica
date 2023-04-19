@@ -37,12 +37,14 @@
     <q-card-section>
       <q-card-section class="section">
         <p class="vtg-title">Seu site em servidores <u>no</u></p>
-        <p class="vtg-title"><u>Estados Unidos.</u></p>
+        <p class="vtg-title">
+          <u>{{ pais }}</u>
+        </p>
       </q-card-section>
       <q-card-section class="section">
         <div class="row text-subtitle1 vtg-ctn">
           <p>✓</p>
-          <p class="vtg">Servidores em nossos data center americanos;</p>
+          <p class="vtg">Servidores em nossos data center {{ dataCenter }};</p>
         </div>
         <div class="row text-subtitle1 vtg-ctn">
           <p>✓</p>
@@ -53,15 +55,15 @@
         </div>
         <div class="row vtg-ctn">
           <p>✓</p>
-          <p class="vtg">1 usuário de FTP para upload ou download;</p>
+          <p class="vtg">
+            {{ qtdFTP }} usuário de FTP para upload ou download;
+          </p>
         </div>
         <div class="row vtg-ctn">
           <p>✓</p>
-          <p class="vtg vtg-ctn">1 contas de e-mails profissionais;</p>
-        </div>
-        <div class="row vtg-ctn">
-          <p>✓</p>
-          <p class="vtg vtg-ctn">1 contas de e-mails profissionais;</p>
+          <p class="vtg vtg-ctn">
+            {{ qtdEmail }} contas de e-mails profissionais;
+          </p>
         </div>
         <div class="row vtg-ctn">
           <p>✓</p>
@@ -88,6 +90,19 @@
           <p class="vtg">Entre outros...</p>
         </div>
       </q-card-section>
+
+      <div v-if="migra">
+      <q-card-section class="section">
+        <p class="vtg-title">{{migraTitle}}</p>
+      </q-card-section>
+      <q-card-section class="section">
+        <div class="row vtg-ctn">
+          <p>{{migraSimbol}}</p>
+          <p class="vtg">{{migraText}}</p>
+        </div>
+      </q-card-section>
+    </div>
+
       <q-card-section class="section">
         <p class="vtg-title">Você ainda tem</p>
       </q-card-section>
@@ -139,10 +154,17 @@ export default defineComponent({
     qua: String,
     qui: String,
     sex: String,
-    set: String,
-    oit: String,
-    non: String,
-    dec: String,
+
+    pais: String,
+    dataCenter: String,
+    qtdFTP: String,
+    qtdEmail: String,
+    migraSimbol: String,
+    migraTitle: String,
+    migraText: String,
+
+    migra: Boolean,
+
 
     hospe: {
       type: String,
@@ -156,7 +178,7 @@ export default defineComponent({
 
 <style scoped>
 .my-card {
-  height: 1262px;
+  /* height: 1262px; */
   width: 348px;
   border-radius: 5px;
 }
